@@ -1,0 +1,18 @@
+<p>
+	here is the submitted data
+</p>
+<div>
+	<h3>data:</h3>	
+	{{#if missing_values }}	
+	
+		<p>(missing values)</p>
+
+	{{else}}	
+
+		{{#each values }}
+			<strong>{{this.key}}</strong> -- <em>{{this.value}}</em>
+			<hr>		
+		{{/each}}
+		
+	{{/if}}
+</div>
